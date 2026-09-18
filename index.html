@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAVO &amp; Cía.</title>
+<meta name="description" content="SAVO &amp; Cía. — Strategic Advisory, International Relations, Project Development. Santa Cruz de la Sierra, Bolivia.">
+<link rel="alternate" hreflang="es" href="https://www.savocia.com/es/">
+<link rel="alternate" hreflang="en" href="https://www.savocia.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.savocia.com/">
+<link rel="icon" href="assets/brand/isotype.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/savo.css">
+<script>
+(function () {
+  var target = "es/";
+  try {
+    var saved = localStorage.getItem("savo.lang");
+    if (saved === "en" || saved === "es") {
+      target = saved + "/";
+    } else {
+      var langs = navigator.languages || [navigator.language || "es"];
+      for (var i = 0; i < langs.length; i++) {
+        var tag = String(langs[i]).toLowerCase();
+        if (tag.indexOf("es") === 0) { target = "es/"; break; }
+        if (tag.indexOf("en") === 0) { target = "en/"; break; }
+      }
+    }
+  } catch (e) {}
+  location.replace(target);
+})();
+</script>
+</head>
+<body>
+<div class="field" style="padding-block:clamp(2rem,6vw,4rem)">
+  <div class="wrap">
+    <a class="mark" href="es/" aria-label="SAVO &amp; Cía.">
+      <img src="assets/brand/logotype-cream.svg" alt="SAVO &amp; Cía.">
+    </a>
+    <span class="label hero-disciplines">Strategic Advisory · International Relations · Project Development</span>
+    <p class="refusal" style="margin-top:2.5rem">Elija un idioma · Choose a language</p>
+    <p style="margin-top:1.5rem">
+      <a class="act" href="es/" hreflang="es" lang="es">Español</a>
+      <a class="act" href="en/" hreflang="en" lang="en" style="margin-left:0.75rem">English</a>
+    </p>
+  </div>
+</div>
+</body>
+</html>
