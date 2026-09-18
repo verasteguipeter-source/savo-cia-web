@@ -58,7 +58,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 500;
+  /* Zen Kaku Gothic New ships 300 as its lightest cut; 200 does not exist */
+  font-weight: 300;
   text-transform: uppercase;
   line-height: 1.22;
   letter-spacing: 0.035em;
@@ -495,7 +496,7 @@ section.band { padding-block: clamp(4.5rem, 11vw, 9rem); }
   gap: clamp(0.6rem, 1.2vw, 0.9rem);
   padding-block: clamp(0.5rem, 1vw, 0.75rem);
   font-size: clamp(0.875rem, 1.4vw, 1.0625rem);
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.035em;
   text-transform: uppercase;
   line-height: 1.3;
