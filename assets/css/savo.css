@@ -430,6 +430,7 @@ body.menu-open { overflow: hidden; }
 /* ---------- ordinary sections ---------- */
 
 section.band { padding-block: clamp(4.5rem, 11vw, 9rem); }
+#trabajo, #work { padding-bottom: 0; }
 
 .band h2 {
   margin-top: 0;
